@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD</title>
+</head>
+<body>
+    <form action="/add_classes.html/" method="POST">
+        {% csrf_token %}
+        <p><input type="text" name="title"></p>
+        <P><input type="submit" value="提交"></P>
+    </form>
+</body>
+</html>

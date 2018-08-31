@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EDIT</title>
+</head>
+<body>
+<form method="post" action="/edit_classes.html/?nid={{ obj.id }}" >
+{#    <input type="text" name="id" value="{{ obj.id }}" style="display: none">#}
+    {% csrf_token %}
+    <INPUT type="text" name="title" value="{{ obj.titile }}">
+    <input type="submit" value="提交">
+</form>
+
+
+</body>
+</html>
