@@ -20,10 +20,17 @@ from lxs.views import students
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('test/',classes.test),
+
     path('classes.html/',classes.get_classes),
     path('add_classes.html/',classes.add_classes),
     path('del_classes.html/',classes.del_classes),
     path('edit_classes.html/',classes.edit_classes),
+
+    path('set_teacher.html/',classes.set_teacher),
+
+
     path('students.html/',students.get_students),
     path('add_students.html/',students.add_students),
     path('del_students.html/',students.del_students),
